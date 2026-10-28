@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MeanWhile | Work Time Tracking for iOS</title>
+    <meta
+      name="description"
+      content="Track work sessions in one tap, set reminders, organize by projects, and export as CSV, JSON, or PDF."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MeanWhile home">
+        <img src="AppIcon.png" alt="MeanWhile app icon" class="brand-icon" />
+        <span class="brand-name">MeanWhile</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#export">Export</a>
+        <a href="#workflow">Workflow</a>
+      </nav>
+      <div class="lang-switch" aria-label="Switch language">
+        <a class="is-active" href="index.html">EN</a>
+        <a href="index.de.html">DE</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <h1>Simple work time tracking, built for clear days.</h1>
+        <p class="hero-copy">
+          MeanWhile helps you track sessions with one tap, stay on schedule with reminders,
+          and keep your work history export-ready in CSV, JSON, and PDF.
+        </p>
+        <div class="hero-actions">
+          <a class="store-badge is-inactive" aria-label="Download MeanWhile on the App Store" aria-disabled="true" tabindex="-1">
+            <span class="store-badge-ribbon">SOON AVAILABLE</span>
+            <img
+              src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+              alt="Download on the App Store"
+            />
+          </a>
+          <a class="btn btn-primary" href="#features">Explore Features</a>
+          <a class="btn btn-ghost" href="#export">See Export</a>
+        </div>
+      </section>
+
+      <section id="features" class="features reveal">
+        <h2>What MeanWhile covers</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>One-tap tracking</h3>
+            <p>Start and stop sessions instantly with a live timer and clean daily overview.</p>
+          </article>
+          <article class="card">
+            <h3>Daily progress</h3>
+            <p>Visual progress against your configured work limit keeps the day predictable.</p>
+          </article>
+          <article class="card">
+            <h3>Smart reminders</h3>
+            <p>Clock-in, clock-out, break, and approaching-limit reminders reduce missed time.</p>
+          </article>
+          <article class="card">
+            <h3>Projects and tasks</h3>
+            <p>Organize entries by project and task, with optional selection before tracking.</p>
+          </article>
+          <article class="card">
+            <h3>History view</h3>
+            <p>Browse past days with session durations, counts, and detail drill-down.</p>
+          </article>
+          <article class="card">
+            <h3>Localized UI</h3>
+            <p>Built with English and German localization for everyday practical use.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="export" class="export reveal">
+        <h2>Reliable data export</h2>
+        <p>Export selected entries with date and project filters. Use the format that fits your workflow.</p>
+
+        <div class="format-switch" role="tablist" aria-label="Export formats">
+          <button class="format-btn is-active" role="tab" aria-selected="true" data-format="pdf">PDF</button>
+          <button class="format-btn" role="tab" aria-selected="false" data-format="json">JSON</button>
+          <button class="format-btn" role="tab" aria-selected="false" data-format="csv">CSV</button>
+        </div>
+
+        <article class="format-panel" id="format-panel">
+          <h3 id="format-title">PDF export</h3>
+          <p id="format-copy">Shareable summary format for records, approvals, or client-facing documentation.</p>
+        </article>
+      </section>
+
+      <section id="workflow" class="workflow reveal">
+        <h2>Fast daily workflow</h2>
+        <ol>
+          <li>Start your session in one tap.</li>
+          <li>Assign project/task when needed.</li>
+          <li>Review progress and reminders during the day.</li>
+          <li>Export filtered records as CSV, JSON, or PDF.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal">
+      <p>MeanWhile • Work time tracker for iOS</p>
+      <p class="footer-links">
+        <a href="imprint.html">Imprint</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </p>
+      <p id="year"></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

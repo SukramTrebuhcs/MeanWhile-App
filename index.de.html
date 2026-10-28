@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MeanWhile | Arbeitszeit für iOS</title>
+    <meta
+      name="description"
+      content="Arbeitszeiten mit einem Tipp erfassen, Erinnerungen setzen, nach Projekten organisieren und als CSV, JSON oder PDF exportieren."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MeanWhile Startseite">
+        <img src="AppIcon.png" alt="MeanWhile App-Icon" class="brand-icon" />
+        <span class="brand-name">MeanWhile</span>
+      </a>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="#features">Funktionen</a>
+        <a href="#export">Export</a>
+        <a href="#workflow">Ablauf</a>
+      </nav>
+      <div class="lang-switch" aria-label="Sprache wechseln">
+        <a href="index.html">EN</a>
+        <a class="is-active" href="index.de.html">DE</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <h1>Einfache Arbeitszeiterfassung für klare Tage.</h1>
+        <p class="hero-copy">
+          MeanWhile hilft dir, Sessions mit einem Tipp zu erfassen, mit Erinnerungen im Plan zu bleiben
+          und deine Historie als CSV, JSON oder PDF zu exportieren.
+        </p>
+        <div class="hero-actions">
+          <a class="store-badge is-inactive" aria-label="MeanWhile im App Store laden" aria-disabled="true" tabindex="-1">
+            <span class="store-badge-ribbon">SOON AVAILABLE</span>
+            <img
+              src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/de-de?size=250x83"
+              alt="Laden im App Store"
+            />
+          </a>
+          <a class="btn btn-primary" href="#features">Funktionen ansehen</a>
+          <a class="btn btn-ghost" href="#export">Export ansehen</a>
+        </div>
+      </section>
+
+      <section id="features" class="features reveal">
+        <h2>Was MeanWhile bietet</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Tracking mit einem Tipp</h3>
+            <p>Sessions sofort starten und stoppen, mit Live-Timer und klarer Tagesübersicht.</p>
+          </article>
+          <article class="card">
+            <h3>Tagesfortschritt</h3>
+            <p>Visueller Fortschritt gegen dein konfiguriertes Tageslimit.</p>
+          </article>
+          <article class="card">
+            <h3>Intelligente Erinnerungen</h3>
+            <p>Ein- und Ausstempeln, Pausen und Hinweise vor dem Tageslimit.</p>
+          </article>
+          <article class="card">
+            <h3>Projekte und Aufgaben</h3>
+            <p>Einträge nach Projekt und Aufgabe organisieren, optional vor Start verpflichtend.</p>
+          </article>
+          <article class="card">
+            <h3>Verlauf</h3>
+            <p>Vergangene Tage mit Dauer, Session-Anzahl und Detailansicht durchgehen.</p>
+          </article>
+          <article class="card">
+            <h3>Lokalisierung</h3>
+            <p>Verfügbar in Englisch und Deutsch für den täglichen Einsatz.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="export" class="export reveal">
+        <h2>Zuverlässiger Datenexport</h2>
+        <p>Exportiere Einträge mit Datums- und Projektfiltern im passenden Format.</p>
+
+        <div class="format-switch" role="tablist" aria-label="Exportformate">
+          <button class="format-btn is-active" role="tab" aria-selected="true" data-format="pdf">PDF</button>
+          <button class="format-btn" role="tab" aria-selected="false" data-format="json">JSON</button>
+          <button class="format-btn" role="tab" aria-selected="false" data-format="csv">CSV</button>
+        </div>
+
+        <article class="format-panel" id="format-panel">
+          <h3 id="format-title">PDF-Export</h3>
+          <p id="format-copy">Teilbares Übersichtsformat für Doku, Freigaben oder Kundentermine.</p>
+        </article>
+      </section>
+
+      <section id="workflow" class="workflow reveal">
+        <h2>Schneller Tagesablauf</h2>
+        <ol>
+          <li>Session mit einem Tipp starten.</li>
+          <li>Projekt/Aufgabe bei Bedarf auswählen.</li>
+          <li>Fortschritt und Erinnerungen im Tagesverlauf nutzen.</li>
+          <li>Gefilterte Daten als CSV, JSON oder PDF exportieren.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal">
+      <p>MeanWhile • Arbeitszeit-Tracker für iOS</p>
+      <p class="footer-links">
+        <a href="imprint.de.html">Impressum</a>
+        <a href="privacy.de.html">Datenschutz</a>
+      </p>
+      <p id="year"></p>
+    </footer>
+
+    <script src="script.de.js"></script>
+  </body>
+</html>
